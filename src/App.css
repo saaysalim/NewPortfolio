@@ -1,0 +1,105 @@
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  /* Background image */
+  background-image: url('https://github.com/saaysalim/MyPortfolio/blob/main/public/Background%20picture.png'); /* Path to the image in the public folder */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  height: 100vh; /* Ensure full viewport height */
+}
+/* Ensure the app takes up the full height */
+#root > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0c323c; 
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 1440px; /* Fixed width suitable for 17-inch laptops */
+  margin: 0 auto; /* Centers the navbar horizontally */
+}
+.navbar-logo {
+  display: flex;
+  align-items: center; /* Center-aligns the logo */
+}
+.logo-container {
+  display: flex;
+  align-items: center; /* Center-aligns the logo */
+}
+.logo-container img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px; /* Space between logos */
+}
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px; /* Adjusted gap for better spacing */
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  margin: 0 1rem;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  padding: 10px 15px; /* Adds padding inside links for better clickability */
+}
+.navbar a:hover {
+  background-color: #555; /* Slightly lighter shade on hover */
+  border-radius: 5px;
+}
+/* Content Area to Fill Remaining Space */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+  align-items: center;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #0c323c; 
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000; /* Keeps it above other content */
+}
+
+.footer p {
+  margin: 0; /* Remove default paragraph margin */
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1440px) {
+  .navbar {
+    width: 100%; /* For screens smaller than 1440px, let the navbar take the full width */
+    padding: 0 20px; /* Add padding for a balanced look */
+
+  }
+  .footer {
+    padding: 10px 20px;
+  }
+}

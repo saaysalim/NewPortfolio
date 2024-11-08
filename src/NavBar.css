@@ -1,0 +1,68 @@
+/* NavBar.css */
+
+/* Set a smaller width for the navbar */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Change this if you want a full-width nav */
+    display: flex;
+    justify-content: center; /* Centers the navigation items */
+    align-items: center;
+  }
+  
+  /* Adjust navbar list for better spacing */
+  .navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Center the logo container and limit the image size */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  
+  .logo-container img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  /* Style the navigation items */
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar a:hover {
+    color: #f39c12;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar li {
+      margin: 10px 0;
+    }
+  }
+  
